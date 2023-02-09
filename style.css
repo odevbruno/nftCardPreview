@@ -1,0 +1,158 @@
+@import 'https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap';
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-blue: hsl(217, 54%, 11%);
+  --card-blue: hsl(216, 50%, 16%);
+  --line-blue: hsl(215, 32%, 27%);
+  --branco: #fff
+}
+
+/* STYLE */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--main-blue);
+}
+
+main {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.card {
+  width: 35rem;
+  background-color: var(--card-blue);
+  padding: 17px;
+  border-radius: 15px;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 1px;
+  height: auto;
+}
+
+.card-heading {
+  color: var(--branco);
+  padding: 15px 0px;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.card-subtitle {
+  color: var(--soft-blue);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-bottom: 1px solid var(--line-blue);
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-price img {
+  width: 1.2rem;
+}
+
+.card-price span {
+  color: var(--cyan);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.card-clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.card-clock img {
+  width: 1.4rem;
+}
+
+.card-clock span {
+  color: var(--soft-blue);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.creator img {
+  margin: 15px 5px;
+  width: 12%;
+  border: 1px solid var(--branco);
+  border-radius: 20px;
+}
+
+.creator p {
+  font-weight: 600;
+  color: var(--soft-blue);
+  font-size: 1.2rem;
+}
+
+.name {
+  color: var(--branco);
+}
+
+/* EFFECTS */
+
+.card-image:hover {
+  background-color: var(--cyan);
+  opacity: 0.6;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.card-heading:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.name:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+@media (max-width: 500px){
+  .card {
+    width: 34rem;
+  }
+}
